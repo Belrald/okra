@@ -1,4 +1,5 @@
-sudo yum update -y
+#!/bin/bash
+sudo yum update
 sudo yum install ruby wget -y
 cd /home/ec2-user
 wget https://aws-codedeploy-eu-west-2.s3.amazonaws.com/latest/install
