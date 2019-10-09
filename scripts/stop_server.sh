@@ -1,4 +1,4 @@
-/bin/bash
+#!/bin/bash -x
 isExistApp = `grep httpd`
 if [[ -n $isExistApp ]]; then
 service httpd stop
