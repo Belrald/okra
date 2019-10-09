@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
     - source: /index.html
-    - destination: /usr/local/apache2/htdocs/
+    - destination: /var/www/html/index
 hooks:
   BeforeInstallation:
     - location: scripts/change_permissions.sh
