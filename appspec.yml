@@ -7,7 +7,7 @@ hooks:
   BeforeInstallation:
     - location: scripts/change_permissions.sh
       timeout: 300
-      runas: root      
+      runas: root
     - location: scripts/install_dependecies.sh
       timeout: 300
       runas: root
