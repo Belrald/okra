@@ -5,11 +5,10 @@ files:
     - destination: /var/www/html/
 hooks:
   BeforeInstallation:
-    - location: scripts/install_dependecies.sh
-      timeout: 300
-      runas: root
-  AfterInstallation: 
     - location: scripts/change_permissions.sh
+      timeout: 300
+      runas: root      
+    - location: scripts/install_dependecies.sh
       timeout: 300
       runas: root
   ApplicationStart:
